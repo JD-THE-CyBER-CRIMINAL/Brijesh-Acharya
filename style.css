@@ -1,0 +1,487 @@
+
+.header{
+    height: 80px;
+    width: 80vw;
+    margin: auto;
+}
+
+
+.header img{
+    height: 80px;
+}
+
+
+@media only screen and (max-width:600px) {
+    .header{
+        width: 100vw;
+    }
+}
+.header nav{
+    float: right;
+    
+}
+.header nav ul{
+    display: flex;
+    line-height: 50px;
+    margin: 10px;
+    list-style: none;
+    
+}
+
+.header nav ul li a{
+    color: red;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 5px;
+    
+}
+
+@media only screen and (max-width:600px){
+    .header nav ul li{
+        position: absolute;
+        right: 0vw;
+        top: 2.7vh;
+        font-size:10px ;
+    }
+}
+/* banner style starting*/
+
+
+/* text slider */
+.text-slider {
+  width: 30vw;
+  height: 55px;
+  overflow: hidden;
+  position: absolute;
+  top: 230px;
+  right: 3vw;
+  background: #ffc755;
+  backdrop-filter: blur(30px);
+  border: 1px solid red;
+  text-align: center;
+}
+@media only screen and (max-width:600px){
+    .text-slider{
+        height: 3vh;
+    }
+}
+
+.text-slide{
+  width: 100%;
+  height: 100%;
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 1px solid red;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  padding: 4px 0;
+  transition: opacity 0.5s ease; /* Smooth transition effect */
+}
+
+.text-slide.active {
+  display: block;
+  opacity: 1;
+}
+
+@media only screen and (max-width:600px){
+    .text-slide{
+        font-size: 1rem;
+        position: absolute;
+        line-height: 15px;
+    }
+
+}
+
+
+
+/* container style starting*/
+
+.container{
+    height: auto;
+    width: 100vw;
+    background: rgb(248,248,248);
+    text-align: center;
+    
+}
+
+.child{
+    width: 80vw;
+    margin: auto;
+    padding: 2vh 0;
+}
+@media only screen and (max-width:600px){
+    .child{
+        width: 100vw;
+    }
+}
+
+.
+
+
+
+/* god image slider */
+.card {
+  height: ;
+  width: 24%;
+}
+
+.card-content {
+  position: relative;
+  padding: 15rem 5rem;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+.card:hover .card-content {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  color: white;
+}
+.card-front {
+  background-image: url(image/pandit.jpg);
+  background-color: rgba(255, 163, 42, 0.2);
+  align-items: center;
+}
+
+@media only screen and (max-width:600px){
+    .card-front{
+        background-position: right top;
+    }
+}
+.card-front::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 3px solid yellow;
+  transform: translateZ(2rem);
+}
+.title {
+  font-family: "Teko", sans-serif;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  line-height: 120%;
+  transform: translateZ(4.4rem);
+}
+.sub-title {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transform: translateZ(3rem);
+}
+
+.card-back {
+  background: black;
+  transform: rotateY(180deg);
+  gap: 0.5rem;
+}
+.back-title {
+  font-family: "Teko", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: yellow;
+  text-transform: uppercase;
+  align-self: center;
+  transform: translateZ(2rem);
+}
+
+.card-back span {
+  font-weight: 600;
+  color: yellow;
+}
+.btn {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 2.2rem;
+  color: yellow;
+  border: 2px solid yellow;
+  border-radius: 100px;
+  text-align: center;
+  align-self: center;
+  margin-top: 1rem;
+  transform: translateZ(2rem);
+  transition: 0.3s ease;
+}
+.btn:hover {
+  
+  color: white;
+  border: 2px solid white;
+}
+
+
+
+
+
+
+.call{
+    margin: 20px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.call a{
+    color: white;
+    background: red;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 5px 10px 0px grey;
+}
+
+
+/* container xl starting */
+.container-xl{
+    width: 100vw;
+    height: auto;
+    text-align: justify;
+}
+
+.container-xl-child{
+    height: auto;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+}
+
+@media only screen and (max-width:600px){
+    .container-xl-child{
+        flex-direction: column-reverse;
+        width: 80vw;
+        margin: auto;
+    }
+}
+
+
+
+.container-xl-child div{
+    width: 50vw;
+}
+
+@media only screen and (max-width:600px){
+    .container-xl-child div{
+        width: 80vw;
+    }
+}
+
+.container-xl-child div img{
+    width: 70%;
+    float: right;
+}
+@media only screen and (max-width:600px){
+    .container-xl-child div img{
+        width: 50vw;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+}
+
+
+
+/* container yl start */
+.container-yl{
+    height: auto;
+    width: 100vw;
+    margin: auto;
+    text-align: justify;
+}
+
+.container-yl-child{
+    height: auto;
+    width: 80vw;
+    margin: auto;    
+    display: flex;
+}
+
+@media only screen and (max-width:600px){
+    .container-yl-child{
+        width: 80vw;
+        margin: auto;
+        flex-direction: column;
+    }
+}
+.container-yl-child div{
+    width: 50vw;
+}
+@media only screen and (max-width:600px){
+    .container-yl-child div{
+        width: 80vw;
+        margin: auto;
+    }
+}
+
+.container-yl-child div img{
+    width: 70%;
+    float: left;
+}
+
+@media only screen and (max-width:600px){
+    .container-yl-child div img{
+    width: 70%;
+    float: none;
+    display: block;
+    margin: auto;
+    }
+}
+
+
+
+
+
+
+/* bottom container style start */
+.lord{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    
+}
+@media only screen and (max-width:600px){
+    .lord{
+        width: 80vw;
+        margin: auto;
+    }
+}
+.bottom-container{
+    height: auto;
+    width: auto;
+}
+.bottom-container-child{
+    height: auto;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width:600px){
+    .bottom-container-child{
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+.bottom-container-child div{
+    width: auto;
+    background: #dedede63;
+    box-shadow: 0 10px 10px #bfbfbfca;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .bottom-container-child div {
+        margin: 10px;
+    }
+}
+
+
+.bottom-container-child div img{
+    width: 22.5vw;
+    display: block;
+    margin: auto;
+    margin: 15px 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.bottom-container-child div img:hover{
+    transform: scale(1.2);
+}
+@media only screen and (max-width:600px){
+    .bottom-container-child div img{
+        width: 80vw;
+    }
+}
+
+.bottom-container-child div span{
+    font-weight: bold;
+}
+.bottom-container-child div p{
+    width: 22.5vw;
+    text-align: justify;
+    margin: 0 15px;
+}
+@media only screen and (max-width:600px){
+    .bottom-container-child div p{
+        width: 80vw;
+    }
+}
+
+
+
+/* services style start */
+
+.service{
+    height: auto;
+    width: 100vw;
+    background: red;
+    color: white;
+}
+
+.service-child{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width:600px){
+    .service-child{
+        flex-direction: column;
+    }
+    .service-child ul{
+        margin-left: -220px;
+    }
+}
+
+.service-child ul{
+    list-style: none;
+}
+
+.service-child ul li::before{
+    content: "\2713";
+}
+
+/* footer style start */
+
+.footer{
+    background: red;
+    height: 80px;
+    border-top: 1.3px solid white;
+    text-align: center;
+}
+.footer p{
+    padding: 12px 0;
+}
+
+@media only screen and (max-width:600px){
+    .footer p{
+        padding: 0 20px;
+    }
+}
