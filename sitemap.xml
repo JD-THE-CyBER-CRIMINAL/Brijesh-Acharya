@@ -10,7 +10,7 @@
 
   <!-- About Page -->
   <url>
-    <loc>https://panditji.netlify.app/about.html</loc>
+    <loc>https://panditji.netlify.app/about</loc>
     <lastmod>2025-01-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -18,7 +18,7 @@
 
   <!-- Contact Us Page -->
   <url>
-    <loc>https://panditji.netlify.app/contact-us.html</loc>
+    <loc>https://panditji.netlify.app/contact us.html</loc>
     <lastmod>2025-01-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
